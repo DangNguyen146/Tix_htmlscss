@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AAED,UAAU;EACN,GAAG,EAAE,wCAAwC;EAC7C,WAAW,EAAE,WAAW;;;AAG5B,UAAU;EACN,GAAG,EAAE,iCAAiC;EACtC,WAAW,EAAE,QAAQ;;;AAGzB,AAAA,IAAI;AACJ,IAAI,CAAC;EACD,WAAW,EAAE,WAAW;CAC3B;;AAED,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/Base/_reset.scss",
+        "../sass/Base/_customize.scss",
+        "../sass/Helper/_variables.scss",
+        "../sass/Helper/_mixin.scss",
+        "../sass/Layouts/_header.scss",
+        "../sass/Layouts/_carousel.scss",
+        "../sass/Layouts/_buyTicket.scss",
+        "../sass/Layouts/_movieComing.scss",
+        "../sass/Layouts/_cinemax.scss",
+        "../sass/Layouts/_news.scss",
+        "../sass/Layouts/_app.scss",
+        "../sass/Layouts/_services.scss",
+        "../sass/Layouts/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

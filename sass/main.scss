@@ -1,0 +1,16 @@
+//Base
+@import './Base/reset';
+@import './Base/customize';
+//Helper
+@import './Helper/variables';
+@import './Helper/mixin';
+//Layouts
+@import './Layouts/header';
+@import './Layouts/carousel';
+@import './Layouts/buyTicket';
+@import './Layouts/movieComing';
+@import './Layouts/cinemax';
+@import './Layouts/news';
+@import './Layouts/app';
+@import './Layouts/services';
+@import './Layouts/footer';
