@@ -27,27 +27,27 @@ body {
   margin-top: 10px;
 }
 
-.cinema .container {
+.cinema .cinema_custom {
   border: 1px solid #ebebec;
 }
 
-.cinema .container .row .nav {
+.cinema .cinema_custom .row .nav {
   vertical-align: middle;
 }
 
-.cinema .container .row .nav .nav-link {
+.cinema .cinema_custom .row .nav .nav-link {
   opacity: 0.3;
   transition: all 0.5s;
 }
 
-.cinema .container .row .nav .nav-link img {
+.cinema .cinema_custom .row .nav .nav-link img {
   width: 50px;
   height: auto;
   padding: 5px 0 10px 0;
   margin: 0;
 }
 
-.cinema .container .row .nav .nav-link::after {
+.cinema .cinema_custom .row .nav .nav-link::after {
   content: '';
   background-color: #ebebec;
   width: 100%;
@@ -56,26 +56,26 @@ body {
   margin: 10px 0;
 }
 
-.cinema .container .row .nav .nav-link:hover {
+.cinema .cinema_custom .row .nav .nav-link:hover {
   opacity: 1;
 }
 
-.cinema .container .row .nav .active {
+.cinema .cinema_custom .row .nav .active {
   background-color: rgba(255, 255, 255, 0);
   opacity: 1;
 }
 
-.cinema .container .cinema__item .row .nav {
+.cinema .cinema_custom .cinema__item .row .nav {
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.cinema .container .cinema__item .row .nav .nav-link .cinema__text {
+.cinema .cinema_custom .cinema__item .row .nav .nav-link .cinema__text {
   font-size: 14px;
   color: #000;
 }
 
-.cinema .container .cinema__item .row .nav .nav-link .cinema__text p {
+.cinema .cinema_custom .cinema__item .row .nav .nav-link .cinema__text p {
   font-size: 12px;
   color: #949494;
   overflow: hidden;
@@ -164,76 +164,107 @@ body {
   clear: both;
 }
 
-.news .container .nav {
-  border-bottom: 0;
-}
-
-.news .container .nav .nav-item .nav-link {
-  border: 0;
+.news .news_custom .nav-tabs .nav-link {
+  border: none;
   color: #000;
-  font-size: 20px;
-  transition: all 0.16s;
+  transition: all 0.3s;
+  text-decoration: none;
 }
 
-.news .container .nav .nav-item .nav-link p {
-  margin: 0;
-}
-
-.news .container .nav .nav-item .active {
+.news .news_custom .nav-tabs .nav-link:hover {
+  color: #fb4226;
   font-size: 24px;
+}
+
+.news .news_custom .nav-tabs .active {
+  border-bottom: 1px solid #ebebec;
+  font-size: 24px;
+  color: red;
+}
+
+.news .news_custom .tab-content .news__item .news__item__img img {
+  width: 100%;
+}
+
+.news .news_custom .tab-content .news__item .news__item__text {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.news .news_custom .tab-content .news__item .news__item__text p {
+  overflow: hidden;
+  width: 100%;
+  height: 55px;
+}
+
+.news .news_custom .tab-content .news__item .news__item__text a {
+  text-decoration: none;
+}
+
+.news .news_custom .tab-content .news__item .news__item__text .news__item__text_tieude p {
+  overflow: hidden;
+  display: -webkit-box;
+  font-size: 16px;
+  width: 100%;
+  height: 42px;
+  color: #000;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news .news_custom .tab-content .news__item .news__item__text .news__item__text_tieude p:hover {
   color: #fb4226;
 }
 
-.news .news__item {
-  padding-bottom: 17px;
-  padding-top: 12px;
+.news .news_custom .tab-content .news__item .news__item__text p {
+  color: #4a4a4a;
 }
 
-.news .news__item .news__item__img {
-  border-radius: 4px;
+.news .news_custom .tab-content .news__item .news__item__text span {
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.news .news_custom .tab-content .news__item .news__item__text span img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.news .news_custom .tab-content .news_empty {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 10px;
   overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.news .news__item .news__item__img img {
-  width: 100%;
-}
-
-.news .news__item .news__item__text {
-  width: 100%;
-  height: auto;
-}
-
-.news .news__item .news__item__text a {
-  margin-bottom: 10px;
-}
-
-.news .news__item .news__item__text p {
-  margin-bottom: 10px;
-  line-height: 1.5em;
-  /* Sets line height to 1.5 times text size */
-  height: 3em;
-  /* Sets the div height to 2x line-height (3 times text size) */
-  width: 100%;
-  /* Use whatever width you want */
-  white-space: normal;
-  /* Wrap lines of text */
-  overflow: hidden;
-  /* Hide text that goes beyond the boundaries of the div */
   text-overflow: ellipsis;
-  /* Ellipses (cross-browser) */
-  -o-text-overflow: ellipsis;
-  /* Ellipses (cross-browser) */
 }
 
-.news .news__item .news__item__text span {
-  color: #9b9b9b;
-  vertical-align: middle;
-  margin-right: 20px;
+.news .news_custom .tab-content .news_empty img {
+  width: 100%;
 }
 
-.news .news__item .news__item__text span img {
-  width: 18px;
-  height: auto;
+.news .news_custom .tab-content .news_empty a {
+  color: #000;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-weight: bold;
+  font-weight: normal;
+}
+
+.news .news_custom .tab-content .news_empty a:hover {
+  color: #fb4226;
+}
+
+@media (max-width: 992px) {
+  .news .news_custom .tab-content .news_empty {
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .news .news_custom .tab-content .news_empty {
+    height: auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */

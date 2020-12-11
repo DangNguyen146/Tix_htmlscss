@@ -1,69 +1,85 @@
-.news {
-    .container {
-        .nav {
-            border-bottom: 0;
-            .nav-item {
+    .news {
+        .news_custom {
+            .nav-tabs {
                 .nav-link {
-                    border: 0;
-                    color: $color-black;
-                    font-size: 20px;
-                    p {
-                        margin: 0;
-                    }
-                    // line-height: 24px;
-                    // height: 24px;
-                    transition: all 0.16s;
+                    border: none;
+                    @include newsLink(24px);
                 }
                 .active {
+                    border-bottom: 1px solid $color-gray-3;
                     font-size: 24px;
-                    color: $color-red-0;
+                    color: red;
+                }
+            }
+            .tab-content {
+                .news__item {
+                    .news__item__img {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .news__item__text {
+                        font-size: 13px;
+                        margin-bottom: $pd-1;
+                        p {
+                            overflow: hidden;
+                            width: 100%;
+                            height: 55px;
+                        }
+                        a {
+                            text-decoration: none;
+                        }
+                        .news__item__text_tieude p {
+                            overflow: hidden;
+                            display: -webkit-box;
+                            // -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            font-size: 16px;
+                            width: 100%;
+                            height: 42px;
+                            @include newsLinks();
+                        }
+                        p {
+                            color: $color-gray-1;
+                        }
+                        span {
+                            justify-content: center;
+                            margin-right: $pd-1;
+                            img {
+                                margin-right: $pd-1;
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+                .news_empty {
+                    width: 100%;
+                    height: 60px;
+                    margin-bottom: $pd-1;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    color: $color-gray-2;
+                    img {
+                        width: 100%;
+                    }
+                    a {
+                        @include newsLinks();
+                        font-weight: normal;
+                    }
                 }
             }
         }
     }
-    .news__item {
-        padding-bottom: 17px;
-        padding-top: 12px;
-        .news__item__img {
-            border-radius: $border-radius;
-            overflow: hidden;
-            margin-bottom: 10px;
-            img {
-                width: 100%;
-            }
+    
+    @media (max-width: 992px) {
+        .news .news_custom .tab-content .news_empty {
+            height: 40px;
         }
-        .news__item__text {
-            width: 100%;
+    }
+    
+    @media (max-width: 576px) {
+        .news .news_custom .tab-content .news_empty {
             height: auto;
-            a {
-                margin-bottom: 10px;
-            }
-            p {
-                margin-bottom: 10px;
-                line-height: 1.5em;
-                /* Sets line height to 1.5 times text size */
-                height: 3em;
-                /* Sets the div height to 2x line-height (3 times text size) */
-                width: 100%;
-                /* Use whatever width you want */
-                white-space: normal;
-                /* Wrap lines of text */
-                overflow: hidden;
-                /* Hide text that goes beyond the boundaries of the div */
-                text-overflow: ellipsis;
-                /* Ellipses (cross-browser) */
-                -o-text-overflow: ellipsis;
-                /* Ellipses (cross-browser) */
-            }
-            span {
-                color: $color-gray-2;
-                img {
-                    width: 18px;
-                    height: auto;
-                }
-                vertical-align: middle;
-                margin-right: 20px;
-            }
         }
     }
-}
