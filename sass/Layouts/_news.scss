@@ -1,12 +1,12 @@
     .news {
         .news_custom {
             .nav-tabs {
+                border: none;
                 .nav-link {
                     border: none;
                     @include newsLink(24px);
                 }
                 .active {
-                    border-bottom: 1px solid $color-gray-3;
                     font-size: 24px;
                     color: red;
                 }
