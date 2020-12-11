@@ -22,4 +22,247 @@ body {
 .clear {
   clear: both;
 }
+
+.owl-carousel .owl-prev {
+  display: block;
+  position: absolute;
+  top: 33%;
+  left: 3%;
+  padding: 0%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  background-color: red !important;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  z-index: 3;
+}
+
+.owl-carousel .owl-prev span {
+  line-height: 20;
+}
+
+.owl-carousel .owl-prev:focus {
+  outline: none;
+}
+
+.owl-carousel .owl-next {
+  left: unset;
+  right: -3%;
+}
+
+header {
+  position: relative;
+}
+
+header .navbar {
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+header .header__left .webLogo {
+  width: 50px;
+  border: 0;
+}
+
+header .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+header .right .imgCircle img {
+  height: auto;
+  width: 30px;
+  border-radius: 25px;
+  margin-right: 5px;
+}
+
+header .right .imgCircle .white {
+  display: inline-block;
+  font-size: 13px;
+  color: #9b9b9b;
+  font-weight: normal;
+}
+
+header .right .selectLocation {
+  display: flex;
+}
+
+header .right .selectLocation .puh {
+  width: 10%;
+}
+
+header .right .selectLocation .dropdown .dropdown-menu .selectScroll {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
+  display: block;
+  width: 100%;
+  clear: both;
+  padding: 0;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.movieCarousel {
+  position: relative;
+}
+
+.movieCarousel .carousel-indicators li {
+  background-color: #d8d8d8;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  color: transparent;
+}
+
+.movieCarousel .carousel-item img {
+  width: 100%;
+  height: 580px;
+}
+
+.movieCarousel .buyTicket {
+  position: absolute;
+  display: block;
+  max-width: 940px;
+  margin: auto;
+  height: 80px;
+  bottom: 0;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.movieCarousel .buyTicket .tool__content .dropdown {
+  width: 100%;
+}
+
+.movieCarousel .buyTicket .widthByPercent {
+  position: relative;
+}
+
+.movieCarousel .buyTicket .widthByPercent .btnMua {
+  background-color: #4a4a4a;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 25px;
+  font-size: 14px;
+  color: #ebebec;
+  font-weight: 400;
+}
+
+.movieComing {
+  padding-top: 75px;
+}
+
+.movieComing .navCenter {
+  text-align: center;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.movieComing .myTab .tab-content {
+  position: relative;
+}
+
+.movieComing .myTab .tab-content .card .movie__overplay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000, transparent 100%);
+  top: 0;
+  border-radius: 4px;
+}
+
+.movieComing .myTab .tab-content .card .card-body .ageType {
+  font-size: 14px;
+  background-color: #fb4226;
+  border-radius: 4px;
+  padding: 0 5px;
+  color: #fff;
+  min-width: 33px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.movieComing .myTab .tab-content .card .card-body .nameFilm {
+  height: 42px;
+  max-height: 42px;
+  font-family: "SF Medium";
+  font-size: 16px;
+  color: #000;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+.movieComing .myTab .tab-content .card .card-body .time {
+  font-size: 13px;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+  margin-top: 8px;
+}
+
+.movieComing .myTab .tab-content .card .card-body .showHover a {
+  background-color: #fb4226 !important;
+}
+
+.movieComing .myTab .tab-content .card .card-body .avgPoint {
+  font-family: "SF Medium";
+  font-size: 16px;
+  background-color: rgba(12, 27, 54, 0.8);
+  border: 1px solid #1f2e46;
+  border-radius: 4px;
+  padding: 2px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #fff;
+  width: 54px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.movieComing .myTab .tab-content .card .card-body .avgPoint .txtPoint {
+  text-align: center;
+  transform: scaleY(1.2);
+}
+
+.movieComing .myTab .tab-content .card .card-body .avgPoint p {
+  margin: 0 !important;
+  text-align: center;
+}
+
+.movieComing .myTab .tab-content .card .card-body .avgPoint p img {
+  max-width: 8px;
+  display: inline;
+}
 /*# sourceMappingURL=main.css.map */
