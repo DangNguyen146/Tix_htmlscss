@@ -23,33 +23,6 @@ body {
   clear: both;
 }
 
-.owl-carousel .owl-prev {
-  display: block;
-  position: absolute;
-  top: 33%;
-  left: 3%;
-  padding: 0%;
-  width: 45px;
-  height: 45px;
-  border-radius: 50% !important;
-  background-color: red !important;
-  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
-  z-index: 3;
-}
-
-.owl-carousel .owl-prev span {
-  line-height: 20;
-}
-
-.owl-carousel .owl-prev:focus {
-  outline: none;
-}
-
-.owl-carousel .owl-next {
-  left: unset;
-  right: -3%;
-}
-
 header {
   position: relative;
 }
@@ -189,6 +162,36 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
 
 .movieComing .myTab .tab-content {
   position: relative;
+}
+
+.movieComing .myTab .tab-content .owl-carousel .owl-prev {
+  display: block;
+  position: absolute;
+  top: 33%;
+  left: 3%;
+  padding: 0%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  background-color: red !important;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  z-index: 3;
+}
+
+.movieComing .myTab .tab-content .owl-carousel .owl-prev span {
+  font-size: 24px;
+  color: #fb4226;
+  font-weight: normal;
+  line-height: 20;
+}
+
+.movieComing .myTab .tab-content .owl-carousel .owl-prev:focus {
+  outline: none;
+}
+
+.movieComing .myTab .tab-content .owl-carousel .owl-next {
+  left: unset;
+  right: -3%;
 }
 
 .movieComing .myTab .tab-content .card .movie__overplay {
