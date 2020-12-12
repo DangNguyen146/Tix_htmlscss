@@ -23,6 +23,36 @@ body {
   clear: both;
 }
 
+.owl-carousel .owl-prev {
+  display: block;
+  position: absolute;
+  top: 33%;
+  left: 3%;
+  padding: 0%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  background-color: red !important;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  z-index: 3;
+}
+
+.owl-carousel .owl-prev span {
+  font-size: 24px;
+  color: #fb4226;
+  font-weight: normal;
+  line-height: 20;
+}
+
+.owl-carousel .owl-prev:focus {
+  outline: none;
+}
+
+.owl-carousel .owl-next {
+  left: unset;
+  right: -3%;
+}
+
 header {
   position: relative;
 }
@@ -164,36 +194,6 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
   position: relative;
 }
 
-.movieComing .myTab .tab-content .owl-carousel .owl-prev {
-  display: block;
-  position: absolute;
-  top: 33%;
-  left: 3%;
-  padding: 0%;
-  width: 45px;
-  height: 45px;
-  border-radius: 50% !important;
-  background-color: red !important;
-  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
-  z-index: 3;
-}
-
-.movieComing .myTab .tab-content .owl-carousel .owl-prev span {
-  font-size: 24px;
-  color: #fb4226;
-  font-weight: normal;
-  line-height: 20;
-}
-
-.movieComing .myTab .tab-content .owl-carousel .owl-prev:focus {
-  outline: none;
-}
-
-.movieComing .myTab .tab-content .owl-carousel .owl-next {
-  left: unset;
-  right: -3%;
-}
-
 .movieComing .myTab .tab-content .card .movie__overplay {
   position: absolute;
   top: 0;
@@ -267,5 +267,219 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
 .movieComing .myTab .tab-content .card .card-body .avgPoint p img {
   max-width: 8px;
   display: inline;
+}
+
+.cinema {
+  margin-top: 10px;
+}
+
+.cinema .container {
+  border: 1px solid #ebebec;
+}
+
+.cinema .container .row .nav {
+  vertical-align: middle;
+}
+
+.cinema .container .row .nav .nav-link {
+  opacity: 0.3;
+  transition: all 0.5s;
+}
+
+.cinema .container .row .nav .nav-link img {
+  width: 50px;
+  height: auto;
+  padding: 5px 0 10px 0;
+  margin: 0;
+}
+
+.cinema .container .row .nav .nav-link::after {
+  content: '';
+  background-color: #ebebec;
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin: 10px 0;
+}
+
+.cinema .container .row .nav .nav-link:hover {
+  opacity: 1;
+}
+
+.cinema .container .row .nav .active {
+  background-color: rgba(255, 255, 255, 0);
+  opacity: 1;
+}
+
+.cinema .container .cinema__item .row .nav {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cinema .container .cinema__item .row .nav .nav-link .cinema__text {
+  font-size: 14px;
+  color: #000;
+}
+
+.cinema .container .cinema__item .row .nav .nav-link .cinema__text p {
+  font-size: 12px;
+  color: #949494;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.cinema .cinema__movie {
+  height: 700px;
+  overflow: auto;
+}
+
+.cinema .cinema__movie::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.cinema .cinema__movie::-webkit-scrollbar-thumb {
+  background: #9b9b9b;
+  border-radius: 4px;
+}
+
+.cinema .cinema__movie::-webkit-scrollbar-track {
+  background: #cdcdcd;
+}
+
+.cinema .cinema__movie {
+  scrollbar-face-color: #9b9b9b;
+  scrollbar-track-color: #cdcdcd;
+}
+
+.cinema .cinema__movie .row img {
+  width: 100%;
+  margin: 0;
+}
+
+.cinema .cinema__movie .row p {
+  margin-bottom: 0;
+}
+
+.cinema .cinema__movie .row .cinema__time {
+  color: #9b9b9b;
+}
+
+.cinema .cinema__movie .row .cinema__item__time {
+  border: 1px solid #e4e4e4;
+  background-color: rgba(246, 246, 246, 0.5);
+  border-radius: 4px;
+  color: #00ac4d;
+  align-items: center;
+  text-align: center;
+}
+
+.cinema .cinema__movie .row .cinema__item__time:hover {
+  color: #fb4226;
+}
+
+.cinema .cinema__movie .row .cinema__item__time span {
+  font-size: 10px;
+  color: #9b9b9b;
+}
+
+.cinema .cinema__movie .cinema__movie__item .container {
+  border: 0px;
+}
+
+.cinema .cinema__movie__bhd__item::after {
+  content: '';
+  background-color: #ebebec;
+  width: 100%;
+  height: 1px;
+  display: block;
+  margin: 10px 0;
+}
+
+.black_news .container {
+  background-image: url(../../img/back-news.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  max-width: 940px;
+  float: none;
+  margin: auto;
+  clear: both;
+}
+
+.news .container .nav {
+  border-bottom: 0;
+}
+
+.news .container .nav .nav-item .nav-link {
+  border: 0;
+  color: #000;
+  font-size: 20px;
+  transition: all 0.16s;
+}
+
+.news .container .nav .nav-item .nav-link p {
+  margin: 0;
+}
+
+.news .container .nav .nav-item .active {
+  font-size: 24px;
+  color: #fb4226;
+}
+
+.news .news__item {
+  padding-bottom: 17px;
+  padding-top: 12px;
+}
+
+.news .news__item .news__item__img {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.news .news__item .news__item__img img {
+  width: 100%;
+}
+
+.news .news__item .news__item__text {
+  width: 100%;
+  height: auto;
+}
+
+.news .news__item .news__item__text a {
+  margin-bottom: 10px;
+}
+
+.news .news__item .news__item__text p {
+  margin-bottom: 10px;
+  line-height: 1.5em;
+  /* Sets line height to 1.5 times text size */
+  height: 3em;
+  /* Sets the div height to 2x line-height (3 times text size) */
+  width: 100%;
+  /* Use whatever width you want */
+  white-space: normal;
+  /* Wrap lines of text */
+  overflow: hidden;
+  /* Hide text that goes beyond the boundaries of the div */
+  text-overflow: ellipsis;
+  /* Ellipses (cross-browser) */
+  -o-text-overflow: ellipsis;
+  /* Ellipses (cross-browser) */
+}
+
+.news .news__item .news__item__text span {
+  color: #9b9b9b;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.news .news__item .news__item__text span img {
+  width: 18px;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */

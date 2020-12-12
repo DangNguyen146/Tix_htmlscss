@@ -1,0 +1,69 @@
+.news {
+    .container {
+        .nav {
+            border-bottom: 0;
+            .nav-item {
+                .nav-link {
+                    border: 0;
+                    color: $color-black;
+                    font-size: 20px;
+                    p {
+                        margin: 0;
+                    }
+                    // line-height: 24px;
+                    // height: 24px;
+                    transition: all 0.16s;
+                }
+                .active {
+                    font-size: 24px;
+                    color: $color-red-0;
+                }
+            }
+        }
+    }
+    .news__item {
+        padding-bottom: 17px;
+        padding-top: 12px;
+        .news__item__img {
+            border-radius: $border-radius;
+            overflow: hidden;
+            margin-bottom: 10px;
+            img {
+                width: 100%;
+            }
+        }
+        .news__item__text {
+            width: 100%;
+            height: auto;
+            a {
+                margin-bottom: 10px;
+            }
+            p {
+                margin-bottom: 10px;
+                line-height: 1.5em;
+                /* Sets line height to 1.5 times text size */
+                height: 3em;
+                /* Sets the div height to 2x line-height (3 times text size) */
+                width: 100%;
+                /* Use whatever width you want */
+                white-space: normal;
+                /* Wrap lines of text */
+                overflow: hidden;
+                /* Hide text that goes beyond the boundaries of the div */
+                text-overflow: ellipsis;
+                /* Ellipses (cross-browser) */
+                -o-text-overflow: ellipsis;
+                /* Ellipses (cross-browser) */
+            }
+            span {
+                color: $color-gray-2;
+                img {
+                    width: 18px;
+                    height: auto;
+                }
+                vertical-align: middle;
+                margin-right: 20px;
+            }
+        }
+    }
+}
