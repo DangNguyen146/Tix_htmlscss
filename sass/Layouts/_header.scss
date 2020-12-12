@@ -1,0 +1,64 @@
+header {
+    position: relative;
+    .navbar {
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    .header__left {
+        .webLogo {
+            width: 50px;
+            border: 0;
+        }
+    }
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .right {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        .imgCircle {
+            img {
+                height: auto;
+                width: 30px;
+                border-radius: 25px;
+                margin-right: 5px;
+            }
+            .white {
+                display: inline-block;
+                @include styleText($fs-0, $color-gray-2, $fw-normal);
+            }
+        }
+        .selectLocation {
+            display: flex;
+            .puh {
+                width: 10%;
+            }
+            .dropdown {
+                .dropdown-menu {
+                    .selectScroll {
+                        max-height: 300px;
+                        overflow-y: scroll;
+                    }
+                    .dropdown-item {
+                        display: block;
+                        width: 100%;
+                        clear: both;
+                        padding: 0;
+                        font-weight: 400;
+                        color: #212529;
+                        text-align: inherit;
+                        white-space: nowrap;
+                        background-color: transparent;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}

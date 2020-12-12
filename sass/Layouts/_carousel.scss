@@ -1,0 +1,58 @@
+.movieCarousel {
+    position: relative;
+    .carousel-indicators {
+        li {
+            background-color: #d8d8d8;
+            width: 12px;
+            height: 12px;
+            padding: 0;
+            border-radius: 50%;
+            border: none;
+            color: transparent;
+        }
+    }
+    .carousel-item {
+        
+        img {
+            width: 100%;
+            height: 580px;
+        }
+    }
+    .buyTicket {
+        position: absolute;
+        display: block;
+        max-width: 940px;
+        margin: auto;
+        height: 80px;
+        bottom: 0;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background-color: #fff;
+        border-radius: 5px;
+        z-index: 2;
+        box-shadow: 0 0 10px rgba(0,0,0,.3);
+        .tool__content {
+            // width: 30%;
+            .dropdown {
+                width: 100%;
+            }
+        }
+        .widthByPercent {
+            position: relative;
+            .btnMua {
+                background-color: #4a4a4a;
+                border: none;
+                text-transform: uppercase;
+                border-radius: 4px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 10px 25px;
+                @include styleText($fs-1,$color-gray-3,$fw-normal-1);
+            }
+        }
+        
+    }
+}
