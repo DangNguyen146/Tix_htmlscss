@@ -9,6 +9,7 @@
         "../sass/Helper/_mixin.scss",
         "../sass/Components/_button.scss",
         "../sass/Base/_normalized.scss",
+        "../sass/Components/_button.scss",
         "../sass/Layouts/_header.scss",
         "../sass/Layouts/_carousel.scss",
         "../sass/Layouts/_buyTicket.scss",
