@@ -85,11 +85,65 @@
 // }
 .movieComing {
     margin-top: 50px;
+    .nav {
+        border: none;
+        align-items: center;
+        text-align: center;
+        font-weight: 600;
+        a {
+            border: none;
+            font-size: 20px;
+            align-items: center;
+            @include newsLink(24px);
+        }
+        .active {
+            p {
+                color: $color-red-0;
+                font-size: 24px;
+            }
+        }
+    }
+    position: relative;
     .movieComing_hover {
+        // padding: 0;
+        padding-top: 10px;
+        // padding-left: 10px;
         .movieComing_item {
+            padding: 0;
+            left: 10px;
             .movieComing_time {
                 font-size: 13px;
                 color: $color-gray-2;
+            }
+            .movieComing_freeYourChoose {
+                position: absolute;
+                top: -13px;
+                left: 3px;
+                width: 50%;
+                img {
+                    width: 100%;
+                }
+            }
+            .movieComing__detail {
+                a {
+                    position: absolute;
+                    z-index: 1;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    margin: 0;
+                    top: 40%;
+                    left: 55%;
+                    transform: translate(-100%, -50%);
+                    i {
+                        top: -50%;
+                        left: -50%;
+                        transform: translate(100%, 50%);
+                    }
+                }
+                transition: all 0.1s;
+                opacity: 0;
             }
             .movieComing_img {
                 position: relative;
@@ -120,10 +174,20 @@
                 border-radius: $border-radius;
                 padding: 2px 5px;
                 color: white;
-                top: 12px;
-                right: 24px;
+                top: 30px;
+                right: 28px;
                 text-align: center;
                 line-height: 1.1;
+            }
+            .movieComing_soon {
+                position: absolute;
+                p {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                bottom: 100px;
+                right: 28px;
+                transition: all 0.3s;
             }
             .movieComing_content {
                 position: relative;
@@ -142,7 +206,7 @@
                     text-align: center;
                     transition: all 0.5s;
                     border-radius: $border-radius;
-                    margin: $pd-1 0;
+                    margin: $pd-1 0px;
                     button {
                         color: white;
                         font-weight: bold;
@@ -167,6 +231,12 @@
                     opacity: 1;
                 }
             }
+            .movieComing_soon {
+                opacity: 0;
+            }
+            .movieComing__detail {
+                opacity: 1;
+            }
         }
     }
     .carousel-control-prev {
@@ -179,6 +249,60 @@
         right: -150px;
         img {
             width: 50px;
+        }
+    }
+    .movieComingResponsive {
+        .movieComingResponsive_item {
+            position: relative;
+            margin-top: $pd-2;
+            .moviComing_contentImgBig {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+            }
+            .moviComing_contentImg {
+                position: absolute;
+                width: 30%;
+                top: -30px;
+                left: -25px;
+                img {
+                    width: 100%;
+                }
+            }
+            .moviComing_contentText {
+                position: absolute;
+                bottom: -10px;
+                width: 100%;
+                padding: 0 10px;
+                p {
+                    font-size: 13px;
+                }
+                .moviComing_age {
+                    float: left;
+                }
+                .moviComing_ageXuatChieu {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .movieComing .movieComing_hover .movieComing_item .movieComing_soon {
+        bottom: 130px;
+        p {
+            font-size: 10px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .movieComing .movieComing_hover .movieComing_item .movieComing_soon {
+        bottom: 120px;
+        p {
+            font-size: 12px;
         }
     }
 }
