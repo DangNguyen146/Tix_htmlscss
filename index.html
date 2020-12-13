@@ -234,24 +234,1187 @@
     <!------------------------- Phần 2 ------------------------------->
     <!-- movie dang chiếu và sấp chiếu -->
     <section class="movieComing">
-        <div class="container">
+
+        <div class="container-md-fluid container-lg">
             <nav>
                 <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
-                    <a class="nav-link active" id="nav-dangchieu-tab" data-toggle="tab" href="#nav-dangchieu" role="tab" aria-controls="nav-dangchieu" aria-selected="true">Đang chiếu</a>
-                    <a class="nav-link" id="nav-sapchieu-tab" data-toggle="tab" href="#nav-sapchieu" role="tab" aria-controls="nav-sapchieu" aria-selected="false">Sắp chiếu</a>
+                    <a class="nav-link active" id="nav-dangchieu-tab" data-toggle="tab" href="#nav-dangchieu" role="tab" aria-controls="nav-dangchieu" aria-selected="true">
+                        <p>Đang chiếu</p>
+                    </a>
+                    <a class="nav-link" id="nav-sapchieu-tab" data-toggle="tab" href="#nav-sapchieu" role="tab" aria-controls="nav-sapchieu" aria-selected="false">
+                        <p>Sắp chiếu</p>
+                    </a>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-dangchieu" role="tabpanel" aria-labelledby="nav-dangchieu-tab">
-                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                <div class="tab-pane fade show active" id="nav-dangchieu" data-interval="false" role="tabpanel" aria-labelledby="nav-dangchieu-tab">
+                    <div id="carouselExampleInterval" class="carousel slide" data-interval="false">
                         <div class="carousel-inner">
-                            <div class="carousel-item active" data-interval="10000">
+                            <div class="movieComingResponsive d-none d-md-block">
+                                <div class="carousel-item active" data-interval="false">
+                                    <div class="row">
+                                        <div class="movieComing_hover col-3">
+                                            <!-- <img src="./img/film_type_2.png" alt=""> -->
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/nu-than-chien-binh-1984-wonder-woman-1984-16069039499631_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>6.1</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_soon">
+                                                    <p class="btn btn-danger">Suất chiếu sớm</p>
+                                                </div>
+                                                <div class="movieComing_freeYourChoose">
+                                                    <img src="./img/film_type_3.png" alt="">
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Nữ Thần Chiến Binh 1984 - Wonder Woman 1984</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/thanh-guom-diet-quy-chuyen-tau-vo-tan-demon-slayer-the-movie-mugen-train-p-16063888466666_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>8.6</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_freeYourChoose">
+                                                    <img src="./img/film_type_1.png" alt="">
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C13</button>Thanh Gươm Diệt Quỷ: Chuyến Tàu Vô Tận - Demon ...</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/tiec-trang-mau-blood-moon-party-16016226514166_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>5.6</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Tiệc Trăng Máu - Blood Moon Party (C18)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/cuoc-chien-huy-diet-skylines-c18-16075011488312_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>9</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Cuộc Chiến Hủy Diệt - Skylines (C18)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/nghe-sieu-kho-extreme-job-c18-16074190927361_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>8.9</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Nghề Siêu Khó - Extreme Job (C18)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>8.9</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Gia Đình Croods: Kỷ Nguyên Mới - The Croods...</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>7</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C16</button>Bí Mật Của Gió - Secrets of the Wind (C16)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>6.6</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_freeYourChoose">
+                                                    <img src="./img/film_type_2.png" alt="">
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Chồng người ta C18</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-interval="false">
+                                    <div class="row">
+                                        <div class="movieComing_hover col-3">
+                                            <!-- <img src="./img/film_type_2.png" alt=""> -->
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/trai-tim-quai-vat-c18-16050651706870.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>6.1</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_soon">
+                                                    <p class="btn btn-danger">Suất chiếu sớm</p>
+                                                </div>
+                                                <div class="movieComing_freeYourChoose">
+                                                    <img src="./img/film_type_2.png" alt="">
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">P</button>Trái tim quái vật (C18)</p>
+                                                        <p class="movieComing_time">89 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/sai-gon-trong-con-mua-saigon-in-the-rain-c16-16018703546576_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>8.6</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C16</button>Sài Gòn Trong Cơn Mưa - Saigon In The Rain (C16)</p>
+                                                        <p class="movieComing_time">105 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/hoa-phong-nguyet-vu-the-crawler-16064689420018_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>5.6</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Hoa Phong Nguyệt Vũ - The Crawler (C18)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/doraemon-nobita-va-nhung-ban-khung-long-moi-doraemon-the-movie-nobita-s-new-dinosaurs-p-16074846198854_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>9</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Hoa Phong Nguyệt Vũ - The Crawler (C18)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/nghe-sieu-kho-extreme-job-c18-16074190927361_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>8.9</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Nghề Siêu Khó - Extreme Job (C18)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>8.9</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Gia Đình Croods: Kỷ Nguyên Mới - The Croods...</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>7</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C16</button>Bí Mật Của Gió - Secrets of the Wind (C16)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>6.6</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_freeYourChoose">
+                                                    <img src="./img/film_type_2.png" alt="">
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Chồng người ta C18</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-interval="false">
+                                    <div class="row">
+                                        <div class="movieComing_hover col-3">
+                                            <!-- <img src="./img/film_type_2.png" alt=""> -->
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/nu-than-chien-binh-1984-wonder-woman-1984-16069039499631_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>6.1</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_soon">
+                                                    <p class="btn btn-danger">Suất chiếu sớm</p>
+                                                </div>
+                                                <div class="movieComing_freeYourChoose">
+                                                    <img src="./img/film_type_3.png" alt="">
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Nữ Thần Chiến Binh 1984 - Wonder Woman 1984</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/thanh-guom-diet-quy-chuyen-tau-vo-tan-demon-slayer-the-movie-mugen-train-p-16063888466666_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>8.6</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_freeYourChoose">
+                                                    <img src="./img/film_type_1.png" alt="">
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C13</button>Thanh Gươm Diệt Quỷ: Chuyến Tàu Vô Tận - Demon ...</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/hoa-phong-nguyet-vu-the-crawler-16064689420018_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>5.6</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Hoa Phong Nguyệt Vũ - The Crawler (C18)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/doraemon-nobita-va-nhung-ban-khung-long-moi-doraemon-the-movie-nobita-s-new-dinosaurs-p-16074846198854_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>9</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Hoa Phong Nguyệt Vũ - The Crawler (C18)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/nghe-sieu-kho-extreme-job-c18-16074190927361_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>8.9</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Nghề Siêu Khó - Extreme Job (C18)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>8.9</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Gia Đình Croods: Kỷ Nguyên Mới - The Croods...</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>7</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C16</button>Bí Mật Của Gió - Secrets of the Wind (C16)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>6.6</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_freeYourChoose">
+                                                    <img src="./img/film_type_2.png" alt="">
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Chồng người ta C18</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-interval="false">
+                                    <div class="row">
+                                        <div class="movieComing_hover col-3">
+                                            <!-- <img src="./img/film_type_2.png" alt=""> -->
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/nu-than-chien-binh-1984-wonder-woman-1984-16069039499631_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>6.1</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_soon">
+                                                    <p class="btn btn-danger">Suất chiếu sớm</p>
+                                                </div>
+                                                <div class="movieComing_freeYourChoose">
+                                                    <img src="./img/film_type_3.png" alt="">
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Nữ Thần Chiến Binh 1984 - Wonder Woman 1984</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/thanh-guom-diet-quy-chuyen-tau-vo-tan-demon-slayer-the-movie-mugen-train-p-16063888466666_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>8.6</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_freeYourChoose">
+                                                    <img src="./img/film_type_1.png" alt="">
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C13</button>Thanh Gươm Diệt Quỷ: Chuyến Tàu Vô Tận - Demon ...</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/hoa-phong-nguyet-vu-the-crawler-16064689420018_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>5.6</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Hoa Phong Nguyệt Vũ - The Crawler (C18)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/doraemon-nobita-va-nhung-ban-khung-long-moi-doraemon-the-movie-nobita-s-new-dinosaurs-p-16074846198854_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>9</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Hoa Phong Nguyệt Vũ - The Crawler (C18)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="movieComing_hover col-3">
+                                            <div class="movieComing_item">
+                                                <div class="movieComing__detail">
+                                                    <a class="venobox text-decoration-none text-white " data-autoplay="true" data-vbtype="video" href="https://youtu.be/PF8_2V2wAUQ">
+                                                        <i class="fa fa-play"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="movieComing_img">
+                                                    <img src="./img/nghe-sieu-kho-extreme-job-c18-16074190927361_215x318.png" alt="">
+                                                    <div class="movieComing_img_hover">
+                                                    </div>
+                                                </div>
+                                                <div class="movieComing_award">
+                                                    <span>
+                                                    <b>8.9</b>
+                                                    <p>
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.png" alt="">
+                                                        <img src="./img/star1.2.png" alt="">
+                                                    </p>
+                                                </span>
+                                                </div>
+                                                <div class="movieComing_content my-2">
+                                                    <div class="movieComing_content_text">
+                                                        <p class="mb-2">
+                                                            <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Nghề Siêu Khó - Extreme Job (C18)</p>
+                                                        <p class="movieComing_time">100 phút</p>
+                                                    </div>
+                                                    <div class="movieComing_content_text_hover">
+                                                        <button class="btn">MUA VÉ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movieComingResponsive d-block d-md-none">
+                            <div class="container-fluid ">
                                 <div class="row">
-                                    <div class="movieComing_hover col-3">
+                                    <div class="col-12">
+                                        <div class="movieComingResponsive_item">
+                                            <div class="moviComing_contentImgBig">
+                                                <img src="./img/nu-than-chien-binh-1984-wonder-woman-1984-15411453088668_540x225.jpg" alt="">
+                                            </div>
+                                            <div class="moviComing_contentImg">
+                                                <img src="./img/film_type_3.png" alt="">
+                                            </div>
+                                            <div class="moviComing_contentText">
+                                                <p class="moviComing_age btn btn-success">P</p>
+                                                <p class="moviComing_ageXuatChieu btn btn-danger">Xuất chiếu sớm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="movieComingResponsive_item">
+                                            <div class="moviComing_contentImgBig">
+                                                <img src="./img/thanh-guom-diet-quy-chuyen-tau-vo-tan-demon-slayer-the-movie-mugen-train-p-16074820529204_540x225.png" alt="">
+                                            </div>
+                                            <div class="moviComing_contentImg">
+                                                <img src="./img/film_type_1.png" alt="">
+                                            </div>
+                                            <div class="moviComing_contentText">
+                                                <p class="moviComing_age btn btn-danger">C13</p>
+                                                <!-- <p class="moviComing_ageXuatChieu btn btn-danger">Xuất chiếu sớm</p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="movieComingResponsive_item">
+                                            <div class="moviComing_contentImgBig">
+                                                <img src="./img/hoa-phong-nguyet-vu-the-crawler-16064689319625_540x225.png" alt="">
+                                            </div>
+                                            <div class="moviComing_contentImg">
+                                                <img src="./img/film_type_3.png" alt="">
+                                            </div>
+                                            <div class="moviComing_contentText">
+                                                <p class="moviComing_age btn btn-danger">C18</p>
+                                                <!-- <p class="moviComing_ageXuatChieu btn btn-danger">Xuất chiếu sớm</p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <a class="d-none d-lg-block carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                            <img src="./img/back-session.png" alt="">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="d-none d-lg-block carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                            <img src="./img/next-session.png" alt="">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-sapchieu" role="tabpanel" aria-labelledby="nav-sapchieu-tab">
+                    <div id="carouselExampleInterval2" class="carousel slide" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-interval="false">
+                                <div class="row">
+                                    <div class="movieComing_hover col-6 col-md-3">
                                         <!-- <img src="./img/film_type_2.png" alt=""> -->
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
-                                                <img src="./img/nu-than-chien-binh-1984-wonder-woman-1984-16069039499631_215x318.png" alt="">
+                                                <img src="./img/trai-tim-quai-vat-c18-16050651706870.png" alt="">
                                                 <div class="movieComing_img_hover">
                                                 </div>
                                             </div>
@@ -266,11 +1429,17 @@
                                                     </p>
                                                 </span>
                                             </div>
+                                            <div class="movieComing_soon">
+                                                <p class="btn btn-danger">Suất chiếu sớm</p>
+                                            </div>
+                                            <div class="movieComing_freeYourChoose">
+                                                <img src="./img/film_type_2.png" alt="">
+                                            </div>
                                             <div class="movieComing_content my-2">
                                                 <div class="movieComing_content_text">
                                                     <p class="mb-2">
-                                                        <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Nữ Thần Chiến Binh 1984 - Wonder Woman 1984</p>
-                                                    <p class="movieComing_time">100 phút</p>
+                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">P</button>Trái tim quái vật (C18)</p>
+                                                    <p class="movieComing_time">89 phút</p>
                                                 </div>
                                                 <div class="movieComing_content_text_hover">
                                                     <button class="btn">MUA VÉ</button>
@@ -278,10 +1447,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover col-6 col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
-                                                <img src="./img/thanh-guom-diet-quy-chuyen-tau-vo-tan-demon-slayer-the-movie-mugen-train-p-16063888466666_215x318.png" alt="">
+                                                <img src="./img/sai-gon-trong-con-mua-saigon-in-the-rain-c16-16018703546576_215x318.png" alt="">
                                                 <div class="movieComing_img_hover">
                                                 </div>
                                             </div>
@@ -297,11 +1466,12 @@
                                                     </p>
                                                 </span>
                                             </div>
+
                                             <div class="movieComing_content my-2">
                                                 <div class="movieComing_content_text">
                                                     <p class="mb-2">
-                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C13</button>Thanh Gươm Diệt Quỷ: Chuyến Tàu Vô Tận - Demon Slayer The Movie: Mugen Train (P)</p>
-                                                    <p class="movieComing_time">100 phút</p>
+                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C16</button>Sài Gòn Trong Cơn Mưa - Saigon In The Rain (C16)</p>
+                                                    <p class="movieComing_time">105 phút</p>
                                                 </div>
                                                 <div class="movieComing_content_text_hover">
                                                     <button class="btn">MUA VÉ</button>
@@ -309,7 +1479,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover col-6 col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/hoa-phong-nguyet-vu-the-crawler-16064689420018_215x318.png" alt="">
@@ -338,7 +1508,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover col-6 col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/doraemon-nobita-va-nhung-ban-khung-long-moi-doraemon-the-movie-nobita-s-new-dinosaurs-p-16074846198854_215x318.png" alt="">
@@ -369,7 +1539,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover d-none d-md-block col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/nghe-sieu-kho-extreme-job-c18-16074190927361_215x318.png" alt="">
@@ -400,7 +1570,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover d-none d-md-block col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_215x318.png" alt="">
@@ -422,7 +1592,7 @@
                                             <div class="movieComing_content my-2">
                                                 <div class="movieComing_content_text">
                                                     <p class="mb-2">
-                                                        <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Gia Đình Croods: Kỷ Nguyên Mới - The Croods: New Age (P)</p>
+                                                        <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Gia Đình Croods: Kỷ Nguyên Mới - The Croods...</p>
                                                     <p class="movieComing_time">100 phút</p>
                                                 </div>
                                                 <div class="movieComing_content_text_hover">
@@ -431,7 +1601,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover d-none d-md-block col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png" alt="">
@@ -461,13 +1631,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover d-none d-md-block col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="">
                                                 <div class="movieComing_img_hover">
                                                 </div>
                                             </div>
+
                                             <div class="movieComing_award">
                                                 <span>
                                                     <b>6.6</b>
@@ -479,10 +1650,13 @@
                                                     </p>
                                                 </span>
                                             </div>
+                                            <div class="movieComing_freeYourChoose">
+                                                <img src="./img/film_type_2.png" alt="">
+                                            </div>
                                             <div class="movieComing_content my-2">
                                                 <div class="movieComing_content_text">
                                                     <p class="mb-2">
-                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Chong người ta C18</p>
+                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Chồng người ta C18</p>
                                                     <p class="movieComing_time">100 phút</p>
                                                 </div>
                                                 <div class="movieComing_content_text_hover">
@@ -493,9 +1667,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item" data-interval="2000">
+                            <div class="carousel-item" data-interval="false">
                                 <div class="row">
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover col-6 col-md-3">
                                         <!-- <img src="./img/film_type_2.png" alt=""> -->
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
@@ -514,6 +1688,12 @@
                                                     </p>
                                                 </span>
                                             </div>
+                                            <div class="movieComing_soon">
+                                                <p class="btn btn-danger">Suất chiếu sớm</p>
+                                            </div>
+                                            <div class="movieComing_freeYourChoose">
+                                                <img src="./img/film_type_3.png" alt="">
+                                            </div>
                                             <div class="movieComing_content my-2">
                                                 <div class="movieComing_content_text">
                                                     <p class="mb-2">
@@ -526,7 +1706,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover col-6 col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/thanh-guom-diet-quy-chuyen-tau-vo-tan-demon-slayer-the-movie-mugen-train-p-16063888466666_215x318.png" alt="">
@@ -545,10 +1725,13 @@
                                                     </p>
                                                 </span>
                                             </div>
+                                            <div class="movieComing_freeYourChoose">
+                                                <img src="./img/film_type_1.png" alt="">
+                                            </div>
                                             <div class="movieComing_content my-2">
                                                 <div class="movieComing_content_text">
                                                     <p class="mb-2">
-                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C13</button>Thanh Gươm Diệt Quỷ: Chuyến Tàu Vô Tận - Demon Slayer The Movie: Mugen Train (P)</p>
+                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C13</button>Thanh Gươm Diệt Quỷ: Chuyến Tàu Vô Tận - Demon ...</p>
                                                     <p class="movieComing_time">100 phút</p>
                                                 </div>
                                                 <div class="movieComing_content_text_hover">
@@ -557,7 +1740,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover col-6 col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/hoa-phong-nguyet-vu-the-crawler-16064689420018_215x318.png" alt="">
@@ -586,7 +1769,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover col-6 col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/doraemon-nobita-va-nhung-ban-khung-long-moi-doraemon-the-movie-nobita-s-new-dinosaurs-p-16074846198854_215x318.png" alt="">
@@ -617,7 +1800,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover d-none d-md-block col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/nghe-sieu-kho-extreme-job-c18-16074190927361_215x318.png" alt="">
@@ -648,7 +1831,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover d-none d-md-block col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_215x318.png" alt="">
@@ -670,7 +1853,7 @@
                                             <div class="movieComing_content my-2">
                                                 <div class="movieComing_content_text">
                                                     <p class="mb-2">
-                                                        <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Gia Đình Croods: Kỷ Nguyên Mới - The Croods: New Age (P)</p>
+                                                        <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Gia Đình Croods: Kỷ Nguyên Mới - The Croods...</p>
                                                     <p class="movieComing_time">100 phút</p>
                                                 </div>
                                                 <div class="movieComing_content_text_hover">
@@ -679,7 +1862,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover d-none d-md-block col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png" alt="">
@@ -709,13 +1892,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover d-none d-md-block col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="">
                                                 <div class="movieComing_img_hover">
                                                 </div>
                                             </div>
+
                                             <div class="movieComing_award">
                                                 <span>
                                                     <b>6.6</b>
@@ -727,10 +1911,13 @@
                                                     </p>
                                                 </span>
                                             </div>
+                                            <div class="movieComing_freeYourChoose">
+                                                <img src="./img/film_type_2.png" alt="">
+                                            </div>
                                             <div class="movieComing_content my-2">
                                                 <div class="movieComing_content_text">
                                                     <p class="mb-2">
-                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Chong người ta C18</p>
+                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Chồng người ta C18</p>
                                                     <p class="movieComing_time">100 phút</p>
                                                 </div>
                                                 <div class="movieComing_content_text_hover">
@@ -741,9 +1928,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item" data-interval="false">
                                 <div class="row">
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover col-6 col-md-3">
                                         <!-- <img src="./img/film_type_2.png" alt=""> -->
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
@@ -762,6 +1949,12 @@
                                                     </p>
                                                 </span>
                                             </div>
+                                            <div class="movieComing_soon">
+                                                <p class="btn btn-danger">Suất chiếu sớm</p>
+                                            </div>
+                                            <div class="movieComing_freeYourChoose">
+                                                <img src="./img/film_type_3.png" alt="">
+                                            </div>
                                             <div class="movieComing_content my-2">
                                                 <div class="movieComing_content_text">
                                                     <p class="mb-2">
@@ -774,7 +1967,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover col-6 col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/thanh-guom-diet-quy-chuyen-tau-vo-tan-demon-slayer-the-movie-mugen-train-p-16063888466666_215x318.png" alt="">
@@ -793,10 +1986,13 @@
                                                     </p>
                                                 </span>
                                             </div>
+                                            <div class="movieComing_freeYourChoose">
+                                                <img src="./img/film_type_1.png" alt="">
+                                            </div>
                                             <div class="movieComing_content my-2">
                                                 <div class="movieComing_content_text">
                                                     <p class="mb-2">
-                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C13</button>Thanh Gươm Diệt Quỷ: Chuyến Tàu Vô Tận - Demon Slayer The Movie: Mugen Train (P)</p>
+                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C13</button>Thanh Gươm Diệt Quỷ: Chuyến Tàu Vô Tận - Demon ...</p>
                                                     <p class="movieComing_time">100 phút</p>
                                                 </div>
                                                 <div class="movieComing_content_text_hover">
@@ -805,7 +2001,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/hoa-phong-nguyet-vu-the-crawler-16064689420018_215x318.png" alt="">
@@ -834,7 +2030,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/doraemon-nobita-va-nhung-ban-khung-long-moi-doraemon-the-movie-nobita-s-new-dinosaurs-p-16074846198854_215x318.png" alt="">
@@ -865,7 +2061,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="movieComing_hover col-3">
+                                    <div class="movieComing_hover d-none d-md-block col-md-3">
                                         <div class="movieComing_item">
                                             <div class="movieComing_img">
                                                 <img src="./img/nghe-sieu-kho-extreme-job-c18-16074190927361_215x318.png" alt="">
@@ -888,254 +2084,6 @@
                                                 <div class="movieComing_content_text">
                                                     <p class="mb-2">
                                                         <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Nghề Siêu Khó - Extreme Job (C18)</p>
-                                                    <p class="movieComing_time">100 phút</p>
-                                                </div>
-                                                <div class="movieComing_content_text_hover">
-                                                    <button class="btn">MUA VÉ</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="movieComing_hover col-3">
-                                        <div class="movieComing_item">
-                                            <div class="movieComing_img">
-                                                <img src="./img/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_215x318.png" alt="">
-                                                <div class="movieComing_img_hover">
-                                                </div>
-                                            </div>
-                                            <div class="movieComing_award">
-                                                <span>
-                                                    <b>8.9</b>
-                                                    <p>
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.2.png" alt="">
-                                                    </p>
-                                                </span>
-                                            </div>
-                                            <div class="movieComing_content my-2">
-                                                <div class="movieComing_content_text">
-                                                    <p class="mb-2">
-                                                        <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Gia Đình Croods: Kỷ Nguyên Mới - The Croods: New Age (P)</p>
-                                                    <p class="movieComing_time">100 phút</p>
-                                                </div>
-                                                <div class="movieComing_content_text_hover">
-                                                    <button class="btn">MUA VÉ</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="movieComing_hover col-3">
-                                        <div class="movieComing_item">
-                                            <div class="movieComing_img">
-                                                <img src="./img/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png" alt="">
-                                                <div class="movieComing_img_hover">
-                                                </div>
-                                            </div>
-                                            <div class="movieComing_award">
-                                                <span>
-                                                    <b>7</b>
-                                                    <p>
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.2.png" alt="">
-                                                    </p>
-                                                </span>
-                                            </div>
-                                            <div class="movieComing_content my-2">
-                                                <div class="movieComing_content_text">
-                                                    <p class="mb-2">
-                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C16</button>Bí Mật Của Gió - Secrets of the Wind (C16)</p>
-                                                    <p class="movieComing_time">100 phút</p>
-                                                </div>
-                                                <div class="movieComing_content_text_hover">
-                                                    <button class="btn">MUA VÉ</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="movieComing_hover col-3">
-                                        <div class="movieComing_item">
-                                            <div class="movieComing_img">
-                                                <img src="./img/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="">
-                                                <div class="movieComing_img_hover">
-                                                </div>
-                                            </div>
-                                            <div class="movieComing_award">
-                                                <span>
-                                                    <b>6.6</b>
-                                                    <p>
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.2.png" alt="">
-                                                    </p>
-                                                </span>
-                                            </div>
-                                            <div class="movieComing_content my-2">
-                                                <div class="movieComing_content_text">
-                                                    <p class="mb-2">
-                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Chong người ta C18</p>
-                                                    <p class="movieComing_time">100 phút</p>
-                                                </div>
-                                                <div class="movieComing_content_text_hover">
-                                                    <button class="btn">MUA VÉ</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="movieComing_hover col-3">
-                                        <!-- <img src="./img/film_type_2.png" alt=""> -->
-                                        <div class="movieComing_item">
-                                            <div class="movieComing_img">
-                                                <img src="./img/nu-than-chien-binh-1984-wonder-woman-1984-16069039499631_215x318.png" alt="">
-                                                <div class="movieComing_img_hover">
-                                                </div>
-                                            </div>
-                                            <div class="movieComing_award">
-                                                <span>
-                                                    <b>6.1</b>
-                                                    <p>
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.2.png" alt="">
-                                                    </p>
-                                                </span>
-                                            </div>
-                                            <div class="movieComing_content my-2">
-                                                <div class="movieComing_content_text">
-                                                    <p class="mb-2">
-                                                        <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Nữ Thần Chiến Binh 1984 - Wonder Woman 1984</p>
-                                                    <p class="movieComing_time">100 phút</p>
-                                                </div>
-                                                <div class="movieComing_content_text_hover">
-                                                    <button class="btn">MUA VÉ</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="movieComing_hover col-3">
-                                        <div class="movieComing_item">
-                                            <div class="movieComing_img">
-                                                <img src="./img/thanh-guom-diet-quy-chuyen-tau-vo-tan-demon-slayer-the-movie-mugen-train-p-16063888466666_215x318.png" alt="">
-                                                <div class="movieComing_img_hover">
-                                                </div>
-                                            </div>
-                                            <div class="movieComing_award">
-                                                <span>
-                                                    <b>8.6</b>
-                                                    <p>
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.2.png" alt="">
-                                                    </p>
-                                                </span>
-                                            </div>
-                                            <div class="movieComing_content my-2">
-                                                <div class="movieComing_content_text">
-                                                    <p class="mb-2">
-                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C13</button>Thanh Gươm Diệt Quỷ: Chuyến Tàu Vô Tận - Demon Slayer The Movie: Mugen Train (P)</p>
-                                                    <p class="movieComing_time">100 phút</p>
-                                                </div>
-                                                <div class="movieComing_content_text_hover">
-                                                    <button class="btn">MUA VÉ</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="movieComing_hover col-3">
-                                        <div class="movieComing_item">
-                                            <div class="movieComing_img">
-                                                <img src="./img/hoa-phong-nguyet-vu-the-crawler-16064689420018_215x318.png" alt="">
-                                                <div class="movieComing_img_hover">
-                                                </div>
-                                            </div>
-                                            <div class="movieComing_award">
-                                                <span>
-                                                    <b>5.6</b>
-                                                    <p>
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.2.png" alt="">
-                                                    </p>
-                                                </span>
-                                            </div>
-                                            <div class="movieComing_content my-2">
-                                                <div class="movieComing_content_text">
-                                                    <p class="mb-2">
-                                                        <button class="btn btn-danger py-0 px-3 mr-1 ">C18</button>Hoa Phong Nguyệt Vũ - The Crawler (C18)</p>
-                                                    <p class="movieComing_time">100 phút</p>
-                                                </div>
-                                                <div class="movieComing_content_text_hover">
-                                                    <button class="btn">MUA VÉ</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="movieComing_hover col-3">
-                                        <div class="movieComing_item">
-                                            <div class="movieComing_img">
-                                                <img src="./img/doraemon-nobita-va-nhung-ban-khung-long-moi-doraemon-the-movie-nobita-s-new-dinosaurs-p-16074846198854_215x318.png" alt="">
-                                                <div class="movieComing_img_hover">
-                                                </div>
-                                            </div>
-                                            <div class="movieComing_award">
-                                                <span>
-                                                    <b>9</b>
-                                                    <p>
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.2.png" alt="">
-                                                    </p>
-                                                </span>
-                                            </div>
-                                            <div class="movieComing_content my-2">
-                                                <div class="movieComing_content_text">
-                                                    <p class="mb-2">
-                                                        <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Hoa Phong Nguyệt Vũ - The Crawler (C18)</p>
-                                                    <p class="movieComing_time">100 phút</p>
-                                                </div>
-                                                <div class="movieComing_content_text_hover">
-                                                    <button class="btn">MUA VÉ</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="movieComing_hover col-3">
-                                        <div class="movieComing_item">
-                                            <div class="movieComing_img">
-                                                <img src="./img/doraemon-nobita-va-nhung-ban-khung-long-moi-doraemon-the-movie-nobita-s-new-dinosaurs-p-16074846198854_215x318.png" alt="">
-                                                <div class="movieComing_img_hover">
-                                                </div>
-                                            </div>
-                                            <div class="movieComing_award">
-                                                <span>
-                                                    <b>9</b>
-                                                    <p>
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.png" alt="">
-                                                        <img src="./img/star1.2.png" alt="">
-                                                    </p>
-                                                </span>
-                                            </div>
-                                            <div class="movieComing_content my-2">
-                                                <div class="movieComing_content_text">
-                                                    <p class="mb-2">
-                                                        <button class="btn btn-success py-0 px-3 mr-1 ">P</button>Hoa Phong Nguyệt Vũ - The Crawler (C18)</p>
                                                     <p class="movieComing_time">100 phút</p>
                                                 </div>
                                                 <div class="movieComing_content_text_hover">
@@ -1147,22 +2095,23 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <a class="carousel-control-prev" href="#carouselExampleInterval2" role="button" data-slide="prev">
                             <img src="./img/back-session.png" alt="">
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <a class="carousel-control-next" href="#carouselExampleInterval2" role="button" data-slide="next">
                             <img src="./img/next-session.png" alt="">
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-sapchieu" role="tabpanel" aria-labelledby="nav-sapchieu-tab">...</div>
             </div>
-
+        </div>
+        <div class="button_responsive text-center my-3">
+            <button id="buttonMore" class="btn btn-outline-secondary  ">XEM THÊM</button>
         </div>
     </section>
-    <div class="black_news">
+    <div class="d-none d-md-block black_news">
         <div class="container"></div>
     </div>
     <!-- rạp chiếu + phim -->
@@ -5545,7 +6494,7 @@
             </div>
         </div>
     </section>
-    <div class="d-none d-sm-block black_news">
+    <div class="black_news">
         <div class="container"></div>
     </div>
     <section class="news">
@@ -5948,6 +6897,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="button_responsive text-center my-3">
+            <button id="buttonMore" class="btn btn-outline-secondary  ">XEM THÊM</button>
         </div>
     </section>
     <!------------------------- Phần 3 ------------------------------->
