@@ -1,0 +1,7 @@
+@mixin button() {
+    background-color: $color-white;
+    border: 0;
+    border-right:1px solid $color-gray-3;
+    border-radius: 0;
+    color: $color-black;
+}
