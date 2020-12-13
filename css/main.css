@@ -181,92 +181,106 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
 }
 
 .movieComing {
-  padding-top: 75px;
+  margin-top: 50px;
 }
 
-.movieComing .navCenter {
-  text-align: center;
-  border: none;
-  margin-bottom: 30px;
+.movieComing .movieComing_hover .movieComing_item .movieComing_time {
+  font-size: 13px;
+  color: #9b9b9b;
 }
 
-.movieComing .myTab .tab-content {
+.movieComing .movieComing_hover .movieComing_item .movieComing_img {
   position: relative;
 }
 
-.movieComing .myTab .tab-content .card .movie__overplay {
+.movieComing .movieComing_hover .movieComing_item .movieComing_img img {
+  width: 100%;
+}
+
+.movieComing .movieComing_hover .movieComing_item .movieComing_img .movieComing_img_hover {
   position: absolute;
+  background: linear-gradient(to top, #000, transparent 100%);
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #000, transparent 100%);
-  top: 0;
-  border-radius: 4px;
+  opacity: 0;
+  transition: all 0.5s;
 }
 
-.movieComing .myTab .tab-content .card .card-body .ageType {
-  font-size: 14px;
-  background-color: #fb4226;
-  border-radius: 4px;
-  padding: 0 5px;
-  color: #fff;
-  min-width: 33px;
-  text-align: center;
-  display: inline-block;
-  margin-right: 8px;
-}
-
-.movieComing .myTab .tab-content .card .card-body .nameFilm {
-  height: 42px;
-  max-height: 42px;
-  font-family: "SF Medium";
-  font-size: 16px;
-  color: #000;
-  line-height: 22px;
-  margin-bottom: 0;
-}
-
-.movieComing .myTab .tab-content .card .card-body .time {
-  font-size: 13px;
-  color: #4a4a4a;
-  margin-bottom: 15px;
-  margin-top: 8px;
-}
-
-.movieComing .myTab .tab-content .card .card-body .showHover a {
-  background-color: #fb4226 !important;
-}
-
-.movieComing .myTab .tab-content .card .card-body .avgPoint {
-  font-family: "SF Medium";
-  font-size: 16px;
-  background-color: rgba(12, 27, 54, 0.8);
-  border: 1px solid #1f2e46;
-  border-radius: 4px;
-  padding: 2px;
+.movieComing .movieComing_hover .movieComing_item .movieComing_award {
   position: absolute;
+  font-size: 16px;
+  background-color: rgba(12, 27, 54, 0.5);
+  border-radius: 4px;
+  padding: 2px 5px;
+  color: white;
   top: 12px;
-  right: 12px;
-  color: #fff;
-  width: 54px;
+  right: 24px;
   text-align: center;
   line-height: 1.1;
 }
 
-.movieComing .myTab .tab-content .card .card-body .avgPoint .txtPoint {
-  text-align: center;
-  transform: scaleY(1.2);
+.movieComing .movieComing_hover .movieComing_item .movieComing_award img {
+  width: 10px;
 }
 
-.movieComing .myTab .tab-content .card .card-body .avgPoint p {
-  margin: 0 !important;
-  text-align: center;
+.movieComing .movieComing_hover .movieComing_item .movieComing_award p {
+  margin: 0;
 }
 
-.movieComing .myTab .tab-content .card .card-body .avgPoint p img {
-  max-width: 8px;
-  display: inline;
+.movieComing .movieComing_hover .movieComing_item .movieComing_content {
+  position: relative;
+}
+
+.movieComing .movieComing_hover .movieComing_item .movieComing_content .movieComing_content_text button {
+  overflow: hidden;
+}
+
+.movieComing .movieComing_hover .movieComing_item .movieComing_content .movieComing_content_text_hover {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  background-color: #fb4226;
+  text-align: center;
+  transition: all 0.5s;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.movieComing .movieComing_hover .movieComing_item .movieComing_content .movieComing_content_text_hover button {
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.movieComing .movieComing_hover:hover .movieComing_img .movieComing_img_hover {
+  opacity: 1;
+}
+
+.movieComing .movieComing_hover:hover .movieComing_content .movieComing_content_text {
+  opacity: 0;
+}
+
+.movieComing .movieComing_hover:hover .movieComing_content .movieComing_content_text_hover {
+  opacity: 1;
+}
+
+.movieComing .carousel-control-prev {
+  left: -150px;
+}
+
+.movieComing .carousel-control-prev img {
+  width: 50px;
+}
+
+.movieComing .carousel-control-next {
+  right: -150px;
+}
+
+.movieComing .carousel-control-next img {
+  width: 50px;
 }
 
 .cinema {
@@ -399,6 +413,13 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
   margin: 10px 0;
 }
 
+.cinema .cinema__movie__bhd__item span {
+  width: 33px !important;
+  text-align: center;
+  border-radius: 4px;
+  padding: 0 5px;
+}
+
 .black_news .container {
   background-image: url(../../img/back-news.png);
   background-size: cover;
@@ -408,6 +429,10 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
   float: none;
   margin: auto;
   clear: both;
+}
+
+.news .news_custom .nav-tabs {
+  border: none;
 }
 
 .news .news_custom .nav-tabs .nav-link {
@@ -423,7 +448,6 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
 }
 
 .news .news_custom .nav-tabs .active {
-  border-bottom: 1px solid #ebebec;
   font-size: 24px;
   color: red;
 }
@@ -484,6 +508,7 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
   margin-bottom: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #9b9b9b;
 }
 
 .news .news_custom .tab-content .news_empty img {

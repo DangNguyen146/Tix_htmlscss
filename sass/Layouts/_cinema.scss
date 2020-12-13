@@ -77,5 +77,11 @@
     }
     .cinema__movie__bhd__item {
         @include lineAfter(1px);
+        span {
+            width: 33px !important;
+            text-align: center;
+            border-radius: $border-radius;
+            padding: 0 5px;
+        }
     }
 }
