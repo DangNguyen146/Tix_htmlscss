@@ -105,6 +105,10 @@ body {
 
 header {
   position: relative;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 header .navbar {
@@ -112,9 +116,20 @@ header .navbar {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
+header .navbar .nav-item .nav-link {
+  color: #000;
+}
+
+header .navbar .nav-item:hover .nav-link {
+  color: #fb4226;
+}
+
 header .header__left .webLogo {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
   width: 50px;
-  border: 0;
 }
 
 header .center {
@@ -154,9 +169,32 @@ header .right .selectLocation .puh {
   width: 10%;
 }
 
+header .right .selectLocation .dropdown .btn:focus {
+  box-shadow: none;
+}
+
 header .right .selectLocation .dropdown .dropdown-menu .selectScroll {
   max-height: 300px;
   overflow-y: scroll;
+}
+
+header .right .selectLocation .dropdown .dropdown-menu .selectScroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+header .right .selectLocation .dropdown .dropdown-menu .selectScroll::-webkit-scrollbar-thumb {
+  background: #9b9b9b;
+  border-radius: 4px;
+}
+
+header .right .selectLocation .dropdown .dropdown-menu .selectScroll::-webkit-scrollbar-track {
+  background: #cdcdcd;
+}
+
+header .right .selectLocation .dropdown .dropdown-menu .selectScroll {
+  scrollbar-face-color: #9b9b9b;
+  scrollbar-track-color: #cdcdcd;
 }
 
 header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
@@ -170,6 +208,35 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+}
+
+@media screen and (max-width: 1060px) {
+  header {
+    top: 0;
+  }
+  nav {
+    align-items: center;
+  }
+  ul {
+    display: none;
+  }
+  .right .imgCircle {
+    display: none;
+  }
+  .right .dropdown {
+    display: none;
+  }
+  .navbar-toggler {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 50px;
+    display: block;
+  }
+  .navbar-toggler img {
+    width: 100%;
+  }
 }
 
 .movieCarousel {
@@ -226,7 +293,7 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
 .movieCarousel .buyTicket {
   position: absolute;
   display: block;
-  max-width: 940px;
+  max-width: 1140px;
   margin: auto;
   height: 80px;
   bottom: 0;
@@ -252,6 +319,20 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
   color: #000;
 }
 
+.movieCarousel .buyTicket .content .btn:focus {
+  box-shadow: none;
+}
+
+.movieCarousel .buyTicket .content .friendly {
+  display: block;
+  font-size: 15px;
+}
+
+.movieCarousel .buyTicket .content .origin {
+  font-size: 11px;
+  color: #aaa;
+}
+
 .movieCarousel .buyTicket .content .btnMua {
   background-color: #4a4a4a;
   border: none;
@@ -262,6 +343,12 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
   font-size: 14px;
   color: #ebebec;
   font-weight: 400;
+}
+
+@media screen and (max-width: 1060px) {
+  .movieCarousel {
+    display: none;
+  }
 }
 
 .movieComing {
@@ -502,6 +589,9 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
 }
 
 @media (min-width: 576px) {
+  .nav-tabs {
+    padding-top: 30px;
+  }
   .movieComing .movieComing_hover .movieComing_item .movieComing_soon {
     bottom: 130px;
   }

@@ -290,6 +290,9 @@
 }
 
 @media (min-width: 576px) {
+    .nav-tabs{
+        padding-top: 30px;
+    }
     .movieComing .movieComing_hover .movieComing_item .movieComing_soon {
         bottom: 130px;
         p {
