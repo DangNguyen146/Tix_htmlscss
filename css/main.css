@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -73,6 +74,33 @@ body {
 #buttonMore:hover {
   background-color: #FB4226;
   border: 1px solid #FB4226;
+}
+
+/* BackToTop */
+.backToTop {
+  display: block;
+  width: 64px;
+  height: 64px;
+  right: 1%;
+  overflow: hidden;
+  text-align: center;
+  line-height: 78px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  /*Giúp ẩn thẻ */
+  opacity: 0;
+  visibility: hidden;
+}
+
+.backToTop img {
+  width: 50%;
+}
+
+/*hiện thẻ*/
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 header {

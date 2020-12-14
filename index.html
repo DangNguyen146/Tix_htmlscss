@@ -43,7 +43,7 @@
             <div class="collapse navbar-collapse center" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Lịch Chiếu</a>
+                        <a class="nav-link" href="movieComing">Lịch Chiếu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Cụm rạp</a>
@@ -6907,48 +6907,47 @@
     <!-- cái đặt app -->
     <section class="app__content">
         <!-- <div class="row"> -->
-            <!-- <div class="col-xs-12 block" id="homeApp"> -->
-                <div class="mainMaxWidth" id="homeApp">
-                    <div class="container" >
-                        <div class="row">
-                            <div class="col-12 col-lg-9 left text-left">
-                                <p class="text-left">Ứng dụng tiện lợi dành cho người yêu điện ảnh</p><br>
-                                <p class="textSmallLeft">Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và
-                                    đổi quà hấp dẫn.</p><br>
-                                <button class="buttonLeft">App miễn phí - Tải về ngay!</button>
-    
-    
-                            </div>
-                            <div class="col-12 col-lg-3 right">
-                                <div class="imgMoblie">
-                                    <div class="phone-img">
-                                        <img class="img-responsive " src="./img/mobile.png" alt="">
+        <!-- <div class="col-xs-12 block" id="homeApp"> -->
+        <div class="mainMaxWidth" id="homeApp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-9 left text-left">
+                        <p class="text-left">Ứng dụng tiện lợi dành cho người yêu điện ảnh</p><br>
+                        <p class="textSmallLeft">Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p><br>
+                        <button class="buttonLeft">App miễn phí - Tải về ngay!</button>
 
-                                    </div>
-                                    
-                                    <div id="carouselControls" class="carousel slide" data-ride="carousel">
-                                        <div class="carousel-inner">
-                                          <div class="carousel-item active">
-                                            <img src="./img/slide1.jpg" class="d-block w-100" alt="...">
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img src="./img/slide2.jpg" class="d-block w-100" alt="...">
-                                          </div>
-                                          <div class="carousel-item">
-                                            <img src="./img/slide3.jpg" class="d-block w-" alt="...">
-                                          </div>
-                                        </div>
-                                      </div>
 
-                                </div>
-    
-                            </div>
-    
-                        </div>
                     </div>
-                   
+                    <div class="col-12 col-lg-3 right">
+                        <div class="imgMoblie">
+                            <div class="phone-img">
+                                <img class="img-responsive " src="./img/mobile.png" alt="">
+
+                            </div>
+
+                            <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="./img/slide1.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/slide2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./img/slide3.jpg" class="d-block w-" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
-            <!-- </div> -->
+            </div>
+
+        </div>
+        <!-- </div> -->
         <!-- </div> -->
 
     </section>
@@ -6986,8 +6985,7 @@
                         </div>
                         <div class="col-md-3 conect">
                             <a href="#"><img class="iconConect" src="./img/./megags.png" alt=""></a>
-                            <a href="#"><img class="iconConect" src="./img/././404b8c4b80d77732e7426cdb7e24be20.png"
-                                    alt=""></a>
+                            <a href="#"><img class="iconConect" src="./img/././404b8c4b80d77732e7426cdb7e24be20.png" alt=""></a>
                             <a href="#"><img class="iconConect" src="./img/cgv.png" alt=""></a>
                             <a href="#"><img class="iconConect" src="./img/bhd.png" alt=""></a>
                         </div>
@@ -7045,6 +7043,13 @@
         </div>
 
     </footer>
+
+    <!-- backToTop -->
+    <a href="#" class="d-block d-lg-none backToTop cd-top text-place js-cd-top">
+        <img src="./img/black-arrow-pointing-up.png" alt="">
+    </a>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="./js/venobox.min.js"></script>
@@ -7052,6 +7057,22 @@
         $('.venobox').venobox({
             titleattr: 'data-title', // default: 'title'\   
             autoplay: true,
+        });
+    </script>
+    <!-- backToTop -->
+    <!-- backToTop -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- smoothsrcoll -->
+    <script src="./js/smoothscroll.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
         });
     </script>
 </body>
