@@ -590,7 +590,7 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
 
 @media (min-width: 576px) {
   .nav-tabs {
-    padding-top: 30px;
+    padding-top: 75px;
   }
   .movieComing .movieComing_hover .movieComing_item .movieComing_soon {
     bottom: 130px;
@@ -609,8 +609,15 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
   }
 }
 
-.cinema {
-  margin-top: 10px;
+.cinema .black_news .container {
+  background-image: url(../../img/back-news.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  max-width: 940px;
+  float: none;
+  margin: auto;
+  clear: both;
 }
 
 .cinema .cinema_custom {
@@ -744,17 +751,6 @@ header .right .selectLocation .dropdown .dropdown-menu .dropdown-item {
   text-align: center;
   border-radius: 4px;
   padding: 0 5px;
-}
-
-.black_news .container {
-  background-image: url(../../img/back-news.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 120px;
-  max-width: 940px;
-  float: none;
-  margin: auto;
-  clear: both;
 }
 
 .news .news_custom .nav-tabs {

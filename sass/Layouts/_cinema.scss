@@ -1,5 +1,16 @@
 .cinema {
-    margin-top: 10px;
+    .black_news {
+        .container {
+            background-image: url(../../img/back-news.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 120px;
+            max-width: 940px;
+            float: none;
+            margin: auto;
+            clear: both;
+        }
+    }
     // height: 500px;
     .cinema_custom {
         border: 1px solid $color-gray-3;
